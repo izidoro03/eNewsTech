@@ -74,7 +74,8 @@ a {
 }
 
 /*  */
-.logo-nav-header li, .dropbtn {
+.logo-nav-header li,
+.dropbtn {
   margin-right: 25px;
   font-size: 18px;
   font-family: "Outfit", sans-serif;
