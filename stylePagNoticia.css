@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Outfit&family=Poppins&family=Roboto+Mono&display=swap");
 
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
 ul,
@@ -83,48 +83,50 @@ a {
   margin-bottom: auto;
 }
 
-.conteudo-img{
-   display: flex;
-   flex-direction: column;
-   max-width: 50%;
+.conteudo-img {
+  display: flex;
+  flex-direction: column;
+  max-width: 50rem;
+  max-height: 445px;
 }
-.conteudo-img img{
-    width: 100%;
-    height: 40%;
+
+.labels {
+  display: flex;
+  justify-content: space-between;
 }
-.labels{
-    display: flex;
-    justify-content: space-between;
+
+.conteudo-img label {
+  font-size: 0.8rem;
+  color: gray;
 }
-.conteudo-img label{
-    font-size: 0.8rem ;
-    color:gray
+
+.conteudo-img p {
+  font-size: 1.1rem;
 }
-.conteudo-img p{
-    font-size: 1.1rem ;
-   
+
+.assunto {
+  display: grid;
+  grid-template-columns: auto auto;
+  flex-direction: row;
+  font-family: "Montserrat", sans-serif;
 }
-.assunto{
-    display: flex;
-    flex-direction: row;
-    font-family: "Montserrat", sans-serif ;
+.container {
+  padding-left: 61px;
+  padding-top: 25px;
 }
-.container{
-    padding-left: 15px;
-    padding-top: 25px;
+.noticias-pequenas img {
+  width: 200px;
+  height: 150px;
 }
-.noticias-pequenas img{
-    width: 200px;
-    height: 150px;
+.noticias-pequenas {
+  display: flex;
+  margin-top: 20px;
 }
-.noticias-pequenas{
-    display: flex;
-    margin-top: 20px;
+.titulo-conteudo {
+  margin-left: 100px;
+  padding-right: 50px;
 }
-.titulo-conteudo{
-    margin-left: 100px;
-}
-.tituPara{
-    width: 100%;
-    margin-left: 15px;
+.tituPara {
+  width: 100%;
+  margin-left: 15px;
 }
