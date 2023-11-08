@@ -14,8 +14,6 @@ body {
     justify-content: center;
     background: url(/static/img/Captura\ de\ tela\ 2023-11-05\ 203822.png);
     backdrop-filter: blur(2px);
-
-
 }
 
 /*AQUI VC AJEITA O CONTAINER DO POP-UP*/
@@ -25,7 +23,7 @@ body {
     height: 666px;
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 20px;
     border-radius: 30px;
     align-items: center;
 }
@@ -35,8 +33,6 @@ body {
 
     display: flex;
     justify-content: center;
-    align-items: center;
-
 }
 
 /* AQUI MEXE NO FORMS, CORES, ALINHAMENTO, TAMANHO*/
@@ -44,30 +40,32 @@ body {
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     background-color: #ffffff;
-    padding: 3rem;
+    padding: 1rem;
 }
 
 /*AQUI MEXE NOS INPUTS COMO UM GERAL*/
-.input-group {
-    display: flex;
+.connect-group {
+    display: inline-flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 1rem 0;
+    padding: 2rem 0;
 
 }
 
+/*AQUI MEXE NOS INPUTS TAMBÉM*/
 .input-box {
     display: flex;
     flex-direction: column;
     margin-bottom: 1.1rem;
     height: 100px;
+    padding: 10px;
 }
 
+/*RESUMINDO, TODOS ESSES .INPUT-BOX SERVE PRA MEXER EM ALGO NOS IMPUTS*/
 .input-box input {
-    margin: 0.6rem;
+    margin: 1rem;
     padding: 1.5rem 1.2rem;
     border: none;
     border-radius: 10px;
@@ -75,42 +73,45 @@ body {
     font-size: 0.8rem;
 }
 
+/* AQUI ELE DA UMA COR QUANDO BOTA O MOUSE EM CIMA DE CADA IMPUT*/
 .input-box input:hover {
     background-color: #eeeeee96;
 }
 
+/* AQUI, QUANDO SELECIONA O IMPUT FICA VERDE AO REDOR (ACHEI LEGAL :) */
 .input-box input:focus-visible {
     outline: 1px solid #00893C;
 }
 
-
+/* AQUI É A COR PLACEHOLDER*/
 .input-box input::placeholder {
     color: #000000be;
 }
 
+/*AQUI, BASICAMENTE É O TAMANHO DOS LABEL*/
 .input-box label {
     width: 480px;
-    height: 30px;
+
 }
 
-
+/*AQUI VC MEXE NOS CHECKBOX DA AREA DE INTERESSE*/
 .conect-group {
-    display: flex;
+    display: inline;
     justify-content: space-between;
-    margin-top: 0.100rem;
-    padding: 0 .5rem;
-}
-
-.input-conect {
-    display: flex;
     align-items: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-right: 10rem;
 }
 
+
+/* AQUI VC MEXE NA DISTANCIA DO CHECKBOX PROS NOMES*/
 .input-conect input {
-    margin-right: 0.35rem;
+    margin-right: 0.30rem;
 
 }
 
+/* AQUI VC VAI MEXER NA FONTE DOS CHECKBOX */
 .input-conect label {
     font-size: 1rem;
     font-weight: 600;
@@ -118,15 +119,16 @@ body {
 
 }
 
+
 /* TODOS ESSES ABAIXOS SERVEM PARA O BOTÃO "ENTRAR"*/
 .login-button {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 9.5rem;
-}
+    margin-top: 2rem;
 
+}
 
 .login-button button {
     width: 30%;
@@ -136,10 +138,9 @@ body {
     padding: 0.62rem;
     border-radius: 5px;
     cursor: pointer;
-    align-items: center;
+    text-align: center;
 
 }
-
 
 .login-button button:hover {
     background-color: #bbb9b9;
@@ -147,18 +148,7 @@ body {
 
 .login-button button a {
     text-decoration: none;
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 400;
-    color: #000000;
-}
-
-/*AQUI VC MEXE NO BOTAO "CRIAR CONTA"*/
-.create-account {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.create-account a {
     color: #000000;
 }
