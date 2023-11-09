@@ -5,7 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="stylePagNoticia.css">
+    <link rel="stylesheet" href="./estiloHeader.css" />
+    <link rel="stylesheet" href="./stylePagNoticia.css" />
   </head>
 
   <body>
@@ -51,11 +52,22 @@
                 </linearGradient>
               </defs>
             </svg>
-            <label>eNewsTech</label>
+            <a href="./index.html"><label>eNewsTech</label></a>
           </li>
           <div class="logo-nav-header">
             <li>
-              <a href="#">Notícias</a>
+              <div class="dropdown">
+                <button class="dropbtn">Notícias</button>
+                <div class="dropdown-content">
+                  <a href="#">Blogs</a>
+                  <a href="#">Esportes</a>
+                  <a href="#">24 Horas</a>
+                  <a href="#">Entretenimento</a>
+                  <a href="#">E-Sports</a>
+                  <a href="#">Fotos</a>
+                  <a href="#">Videos</a>
+                </div>
+              </div>
             </li>
             <li>
               <a href="#">Jogos</a>
@@ -67,7 +79,13 @@
               <a href="#">Produtos</a>
             </li>
             <li>
-              <a href="#">Ver Mais+</a>
+              <div class="dropdown">
+                <button class="dropbtn">Sobre</button>
+                <div class="dropdown-content">
+                  <a href="#">Contato</a>
+                  <a href="#">Reportar bugs</a>
+                </div>
+              </div>
             </li>
             <li>
               <img
@@ -76,7 +94,11 @@
                 width="25px"
               />
             </li>
-            <li><input type="button" value="Login" class="btnSearch" /></li>
+            <li>
+              <a href="./popups/login.html"
+                ><input type="button" value="Login" class="btnSearch"
+              /></a>
+            </li>
           </div>
         </ul>
       </nav>
