@@ -18,11 +18,12 @@
 }
 
 .conteudo-img p {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .assunto {
   display: grid;
+  gap: 42px;
   grid-template-columns: auto auto;
   flex-direction: row;
   font-family: "Montserrat", sans-serif;
@@ -32,15 +33,22 @@
   padding-top: 25px;
 }
 .noticias-pequenas img {
-  width: 200px;
-  height: 150px;
+  width: 230px;
+  height: 130px;
 }
 .noticias-pequenas {
   display: flex;
-  margin-top: 20px;
+  margin-top: 15px;
+}
+
+.noticias-pequenas p {
+  font-size: 0.9rem;
+}
+.noticias-pequenas h3 {
+  font-size: 1rem;
 }
 .titulo-conteudo {
-  margin-left: 100px;
+  margin-left: 50px;
   padding-right: 50px;
 }
 .tituPara {

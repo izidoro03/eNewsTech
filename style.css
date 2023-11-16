@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Outfit&family=Poppins&family=Roboto+Mono&display=swap");
 
+body {
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
 .subHeader {
   display: grid;
   grid-template-columns: 3fr;
@@ -9,7 +14,7 @@
 
 .subHeader ul li {
   display: flex;
-  font-family: "Outfit", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
 }
 
@@ -54,7 +59,7 @@
 
 .main-news {
   background-color: #d9d9d9;
-  padding: 30px;
+  padding: 30px 30px 30px 60px;
 }
 
 .main-news > h2 {
@@ -71,8 +76,10 @@
 
 .news-column {
   display: flex;
+  align-items: flex-start;
   flex-direction: column;
   font-family: "Montserrat", sans-serif;
+  width: 85%;
 }
 
 .block-news {
@@ -84,6 +91,7 @@
   display: flex;
   flex-direction: column;
   margin-left: 10px;
+  width: 75%;
 }
 
 .inf-news h4 {
@@ -94,7 +102,7 @@
 
 .inf-news p {
   font-size: 16px;
-  width: 70%;
+  width: 60%;
 }
 
 .inf-news label {
@@ -108,20 +116,216 @@
   font-size: 12px;
 }
 
-.bemvindo{
-  display: flex;
+.bemvindo {
+  display: none;
   flex-direction: column;
 }
-.bemvindo h3{
+.bemvindo h3 {
   font-size: 1.2rem;
 }
 
-.bemvindo label{
+.bemvindo label {
   font-size: 1.1rem;
   font-weight: bold;
 }
 
-.destaque-verde{
-  color: #00893c;
+.tonarJornalista {
+  display: none;
+}
 
+.destaque-verde {
+  color: #00893c;
+}
+.CorDestaqueVerde {
+  color: #00893c;
+}
+
+.rodape {
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  background: #00893c;
+  color: #fff;
+}
+
+.subHeader {
+  background: #00893c;
+}
+
+.subHeader li a {
+  color: #fff;
+  font-weight: bold;
+}
+
+/****************************************************** estilo popups ******************************************************/
+
+.popupTrue {
+  display: block;
+}
+
+.popup_container {
+  background-color: #ffffff;
+  width: 541px;
+  height: 666px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 30px;
+  align-items: center;
+}
+
+/* AQUI É PRA AJEITAR SÓ O HEADER DO FORMS*/
+.form-header {
+  display: flex;
+  justify-content: center;
+}
+
+/* AQUI MEXE NO FORMS, CORES, ALINHAMENTO, TAMANHO*/
+.form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1rem;
+}
+
+/*AQUI MEXE NOS INPUTS COMO UM GERAL*/
+.connect-group {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+/*AQUI MEXE NOS INPUTS TAMBÉM*/
+.input-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.1rem;
+  height: 100px;
+}
+
+/*RESUMINDO, TODOS ESSES .INPUT-BOX SERVE PRA MEXER EM ALGO NOS IMPUTS*/
+.input-box input {
+  margin-top: 1rem;
+  padding: 1.5rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px #0000001c;
+  font-size: 0.8rem;
+}
+
+/* AQUI ELE DA UMA COR QUANDO BOTA O MOUSE EM CIMA DE CADA IMPUT*/
+.input-box input:hover {
+  background-color: #eeeeee96;
+}
+
+/* AQUI, QUANDO SELECIONA O IMPUT FICA VERDE AO REDOR (ACHEI LEGAL :) */
+.input-box input:focus-visible {
+  outline: 1px solid #00893c;
+}
+
+/* AQUI É A COR PLACEHOLDER*/
+.input-box input::placeholder {
+  color: #000000be;
+}
+
+/*AQUI, BASICAMENTE É O TAMANHO DOS LABEL*/
+.input-box label {
+  width: 480px;
+}
+
+/*AQUI VC MEXE NOS CHECKBOX DA AREA DE INTERESSE*/
+.conect-group {
+  width: 90%;
+  align-items: center;
+  display: grid;
+  grid-template-columns: auto max-content;
+  margin: auto;
+}
+
+/* AQUI VC MEXE NA DISTANCIA DO CHECKBOX PROS NOMES*/
+.input-conect input {
+  margin-right: 0.3rem;
+}
+
+/* AQUI VC VAI MEXER NA FONTE DOS CHECKBOX */
+.input-conect label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000000c0;
+}
+
+/* TODOS ESSES ABAIXOS SERVEM PARA O BOTÃO "ENTRAR"*/
+.login-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.login-button button {
+  width: 30%;
+  height: 44px;
+  border: none;
+  background-color: #d9d9d9;
+  padding: 0.62rem;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.login-button button:hover {
+  background-color: #bbb9b9;
+}
+
+.login-button button a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000000;
+}
+
+/*AQUI VC MEXE NO BOTAO "CRIAR CONTA"*/
+.create-account {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.create-account a {
+  color: #000000;
+}
+
+.popupTrue,
+.popupTrueCadastro,
+.popupTrueJornalista {
+  display: flex;
+  justify-content: center;
+}
+
+.popupdisplay,
+.modalCadastroDisplay,
+.modalJornalistaDisplay {
+  display: none;
+  position: absolute;
+  top: 100px;
+  opacity: 100%;
+}
+
+.background-modals {
+  display: none;
+  background-color: #555555;
+  width: 100vw;
+  min-height: 99rem;
+  position: absolute;
+  top: 0;
+  opacity: 50%;
 }
