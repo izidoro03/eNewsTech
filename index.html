@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>eNewsTech</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./estiloHeader.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="container-header">
@@ -49,50 +50,53 @@
                 </linearGradient>
               </defs>
             </svg>
-            <label>eNewsTech</label>
+            <a href="./index.html"><label>eNewsTech</label></a>
           </li>
           <div class="logo-nav-header">
             <li>
               <div class="dropdown">
                 <button class="dropbtn">Notícias</button>
                 <div class="dropdown-content">
-                  <a href="#">Blogs</a>
-                  <a href="#">Esportes</a>
-                  <a href="#">24 Horas</a>
-                  <a href="#">Entretenimento</a>
-                  <a href="#">E-Sports</a>
-                  <a href="#">Fotos</a>
-                  <a href="#">Videos</a>
+                  <a href="#noticia">Últimas</a>
+                  <a href="./telaEsportes.html">Esportes</a>
+                  <a href="./telaEntretenimento.html">Entretenimento</a>
                 </div>
               </div>
             </li>
             <li>
-              <a href="#">Jogos</a>
+              <a href="./telaCultura.html">Cultura</a>
             </li>
             <li>
-              <a href="#">Informática</a>
+              <a href="./telaEventos.html">Eventos</a>
             </li>
             <li>
-              <a href="#">Produtos</a>
+              <a href="./telaContato.html">Contato</a>
             </li>
-            <li>
-              <div class="dropdown">
-                <button class="dropbtn">Sobre</button>
-                <div class="dropdown-content">
-                  <a href="#">Trabalhe conosco</a>
-                  <a href="#">Contato</a>
-                  <a href="#">Reportar bugs</a>
-                </div>
-              </div>
+            <li class="tonarJornalista">
+              <a class="CorDestaqueVerde btnTornarJornalista"
+                >Tornar-se jornalista</a
+              >
             </li>
-            <li>
+            <!-- <li>
               <img
                 src="./icon/iconSearch.png"
                 alt="Icon pesquisar"
                 width="25px"
               />
+            </li> -->
+            <li>
+              <a
+                ><input
+                  type="button"
+                  value="Login"
+                  class="btnSearch"
+                  id="botaoLogin"
+              /></a>
             </li>
-            <li><input type="button" value="Login" class="btnSearch" /></li>
+            <li class="bemvindo">
+              <h3>Seja bem-vindo</h3>
+              <label class="destaque-verde">Abraão</label>
+            </li>
           </div>
         </ul>
       </nav>
@@ -177,7 +181,7 @@
     </div>
 
     <div class="main-news">
-      <h2>NOTÍCIAS</h2>
+      <h2 id="noticia">NOTÍCIAS</h2>
       <ul class="news-column">
         <li>
           <div class="block-news">
@@ -283,7 +287,236 @@
             </a>
           </div>
         </li>
+        <li>
+          <div class="block-news">
+            <div class="column-img">
+              <img
+                src="https://www.didigalvao.com.br/wp-content/uploads/2023/11/53383167-dd44-4c0e-91af-11f955bc44dd.jpeg"
+                alt="imagem-noticias"
+              />
+              <div class="details-news">
+                <label>Abraham Lincoln</label>
+                <label>03/10/23</label>
+              </div>
+            </div>
+            <a href="./paginaNoticia.html">
+              <div class="inf-news">
+                <h4>Titulo da noticia</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                  porro, velit cum optio quam sequi dolore dolorum dicta minus,
+                  maxime nihil quos. Modi, eum fuga quas ipsam architecto
+                  dolores laboriosam?
+                </p>
+                <label>Gênero</label>
+              </div>
+            </a>
+          </div>
+        </li>
       </ul>
     </div>
+    <footer>
+      <div class="rodape" id="contato">
+        <label
+          >Desenvolvido por:
+          <strong>
+            Abraão Araujo, Ytalo izidoro, Rogger Carvalho e Ray Nunes
+          </strong>
+        </label>
+        <label
+          >Para entrar em conosco, envie uma mensagem para:
+          <strong>enewstech@gmail.com</strong></label
+        >
+      </div>
+    </footer>
+
+    <div class="background-modals"></div>
+
+    <!-- modal de login -->
+    <div class="popupTrue">
+      <div class="popupdisplay">
+        <div class="popup_container">
+          <div class="form">
+            <form>
+              <div class="form-header">
+                <div class="title">
+                  <h1>LOGIN</h1>
+                </div>
+              </div>
+              <div class="input-group">
+                <div class="input-box">
+                  <label for="login">Email</label>
+                  <input
+                    id="email"
+                    type="email"
+                    name="login"
+                    placeholder="Digite o seu email"
+                  />
+                </div>
+                <div class="input-box">
+                  <label for="senha">Senha</label>
+                  <input
+                    id="password"
+                    type="current-password"
+                    name="password"
+                    placeholder="Digite a sua senha"
+                  />
+                </div>
+                <div class="conect-input">
+                  <div class="input-conect">
+                    <input id="conect" type="radio" />
+                    <label for="conect">Manter-se conectado</label>
+                  </div>
+                </div>
+                <div class="login-button">
+                  <button><a>Entrar</a></button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="create-account createAccountLink">
+            <a>Criar conta</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal de cadastro -->
+    <div class="popupTrueCadastro">
+      <div class="modalCadastroDisplay">
+        <div class="popup_container">
+          <form>
+            <div class="form-header">
+              <div class="title">
+                <h1>CADASTRO</h1>
+              </div>
+            </div>
+            <div class="input-group">
+              <div class="input-box">
+                <label for="email">Email</label>
+                <input
+                  id="emailCadastro"
+                  type="email"
+                  name="email"
+                  placeholder="Digite aqui o seu email"
+                />
+              </div>
+              <div class="input-box">
+                <label for="senha">Senha</label>
+                <input
+                  id="senha"
+                  type="password"
+                  name="senha"
+                  placeholder="Digite aqui a sua senha"
+                />
+              </div>
+
+              <div class="conect-group">
+                <div>
+                  <a>Áreas de interesse:</a>
+                </div>
+                <br />
+                <br />
+                <div class="input-conect">
+                  <input id="local" type="checkbox" />
+                  <label for="local">Noticias locais</label>
+                </div>
+                <div class="input-conect">
+                  <input id="entretenimento" type="checkbox" />
+                  <label for="entretenimento">Entretenimento</label>
+                </div>
+                <div class="input-conect">
+                  <input id="esportes" type="checkbox" />
+                  <label for="esportes">Esportes</label>
+                </div>
+                <div class="input-conect">
+                  <input id="tecnologia" type="checkbox" />
+                  <label for="tecnologia">Tecnologia</label>
+                </div>
+                <div class="input-conect">
+                  <input id="ciência" type="checkbox" />
+                  <label for="ciência">Ciência</label>
+                </div>
+                <div class="input-conect">
+                  <input id="politica" type="checkbox" />
+                  <label for="politica">Política</label>
+                </div>
+                <div class="input-conect">
+                  <input id="educação" type="checkbox" />
+                  <label for="educação">Educação</label>
+                </div>
+                <div class="input-conect">
+                  <input id="saude" type="checkbox" />
+                  <label for="saude">Saúde</label>
+                </div>
+                <div class="input-conect">
+                  <input id="vida" type="checkbox" />
+                  <label for="vida">Estilo de vida</label>
+                </div>
+                <div class="input-conect">
+                  <input id="security" type="checkbox" />
+                  <label for="security">Segurança</label>
+                </div>
+              </div>
+
+              <div class="login-button closePage" id="botaoCadastrar">
+                <button><a>CADASTRAR</a></button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal de jornalista -->
+    <div class="popupTrueJornalista">
+      <div class="modalJornalistaDisplay">
+        <div class="popup_container">
+          <div class="form">
+            <form>
+              <div class="form-header">
+                <div class="title">
+                  <h1>Tornar-se Jornalista</h1>
+                </div>
+              </div>
+              <div class="input-group">
+                <div class="input-box">
+                  <label for="number"> Número de telefone </label>
+                  <input
+                    id="Number"
+                    type="tel"
+                    name="Number"
+                    placeholder="(xx) x xxxx-xxxx"
+                  />
+                </div>
+                <div class="input-box">
+                  <label for="formation"> Formação acadêmica </label>
+                  <input
+                    id="formation"
+                    type="text"
+                    name="formation"
+                    placeholder="Digite aqui a sua formação"
+                  />
+                </div>
+                <div class="input-box">
+                  <label for="skills"> Habilidades relevantes </label>
+                  <input
+                    id="skills"
+                    type="text"
+                    name="skills"
+                    placeholder="Digite aqui as suas habilidades"
+                  />
+                </div>
+
+                <div class="login-button closePage feedbackJornalist">
+                  <button><a>ENVIAR</a></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
   </body>
 </html>
