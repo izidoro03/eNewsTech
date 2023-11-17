@@ -1,5 +1,88 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Outfit&family=Poppins&family=Roboto+Mono&display=swap");
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* HEADER */
+
+.list-header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo-header {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+}
+
+.logo-nav-header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70px;
+  text-align: center;
+}
+
+.logo-nav-header li {
+  margin-right: 25px;
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+}
+
+.logo-header label {
+  color: #00893c;
+}
+
+.container-header {
+  height: 75px;
+}
+
+.btnSearch {
+  padding: 10px 25px;
+  background-color: #00893c;
+  font-family: "Roboto Mono", monospace;
+  font-size: 15px;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border: none;
+}
+
+.subHeader {
+  display: grid;
+  grid-template-columns: 3fr;
+  height: 55px;
+  background-color: #d9d9d9;
+}
+
+.subHeader ul li {
+  display: flex;
+  font-family: "Outfit", sans-serif;
+  font-size: 20px;
+}
+
+.subHeader ul li a {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .conteudo-img {
   display: flex;
   flex-direction: column;
@@ -18,12 +101,11 @@
 }
 
 .conteudo-img p {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .assunto {
   display: grid;
-  gap: 42px;
   grid-template-columns: auto auto;
   flex-direction: row;
   font-family: "Montserrat", sans-serif;
@@ -33,22 +115,15 @@
   padding-top: 25px;
 }
 .noticias-pequenas img {
-  width: 230px;
-  height: 130px;
+  width: 200px;
+  height: 150px;
 }
 .noticias-pequenas {
   display: flex;
-  margin-top: 15px;
-}
-
-.noticias-pequenas p {
-  font-size: 0.9rem;
-}
-.noticias-pequenas h3 {
-  font-size: 1rem;
+  margin-top: 20px;
 }
 .titulo-conteudo {
-  margin-left: 50px;
+  margin-left: 100px;
   padding-right: 50px;
 }
 .tituPara {
