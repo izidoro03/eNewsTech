@@ -18,6 +18,12 @@ body {
   margin: 25px 0px;
 }
 
+.newEmphasis > a > img {
+  max-height: 300px;
+  max-width: 400px;
+  height: 300px;
+}
+
 .newEmphasis > a {
   width: 400px;
 }
@@ -39,6 +45,7 @@ body {
   transition: ease-in 1s;
   color: #fff;
   height: 100%;
+  width: 100%;
   background-color: #0a00009c;
 }
 
@@ -50,14 +57,19 @@ body {
 }
 
 /* container noticias com estilo atualizado */
-.container-big-simple a {
+.container-big-simple a,
+.container_div_noticias_lado_direito {
   background-color: #fff;
   border: 1px solid #eaeaea;
   display: flex;
   flex-direction: column;
   width: 400px;
-  height: auto;
+  max-height: 409px;
   padding: 25px;
+}
+
+.container_div_noticias_lado_direito {
+  margin-bottom: 40px;
 }
 
 .inf-about-author {
@@ -104,10 +116,12 @@ body {
 
 .container-little-new > a > h2 {
   font-size: 1rem;
+  width: 241px;
 }
 
 .container-big-simple img {
-  width: auto;
+  width: 100%;
+  min-height: 100%;
   object-fit: cover;
 }
 
@@ -128,6 +142,42 @@ body {
   flex-direction: row;
   justify-content: flex-start;
 }
+
+.container-completo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container_temperatura {
+  display: flex;
+  flex-direction: column;
+}
+
+.container_temperatura > label {
+  margin-top: 10px;
+}
+
+.noticia_mais_lidas_top3 {
+  display: flex;
+  align-items: center;
+}
+
+.noticia_mais_lidas_top3 > label {
+  font-size: 1.5rem;
+  padding: 2px;
+  color: #777777;
+}
+
+.noticia_mais_lidas_top3 > a {
+  color: #00893c;
+  border: none;
+  font-weight: bold;
+}
+
+.noticia_mais_lidas_top3 > .top1 {
+  padding-right: 7px;
+}
+
 .containers-de-grupos-pequenos > ul {
   display: flex;
   flex-direction: column;
@@ -147,15 +197,23 @@ body {
 }
 
 .rodape {
-  bottom: 0;
-  text-align: center;
-  flex-direction: column;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
   justify-content: center;
   padding: 15px;
-  display: flex;
+  width: 100%;
   font-family: "Montserrat", sans-serif;
   background: #00893c;
   color: #fff;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  width: 100%;
+  top: auto;
 }
 
 /****************************************************** estilo popups ******************************************************/

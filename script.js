@@ -67,6 +67,22 @@ function handleClickLogin(event) {
   }
 }
 
+function verificarTemperatura() {
+  let temperaturaAtual = document.querySelector(".temperaturaAtualPrevisao");
+  let temperaturaSensacao = document.querySelector(".temperaturaSensacao");
+  fetch(
+    "https://api.openweathermap.org/data/2.5/weather?lat=-9.647&lon=-35.73&appid=81f7309983fa729c8c98fe4a5d5f6de3"
+  )
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+      temperaturaAtual.textContent = Math.floor(data.main.temp - 273.15);
+      temperaturaSensacao.textContent = Math.floor(data.main.feels_like - 273.15);
+      console.log(temperaturaAtual);
+    });
+  //temperatura vem como padrão em kelvin, converter em celsius!!!
+}
+verificarTemperatura();
 loginButton.addEventListener("click", handleClickLogin);
 botaoCadastrar.addEventListener("click", handleClickLogin);
 
