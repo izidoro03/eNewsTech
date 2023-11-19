@@ -70,6 +70,8 @@ body {
 
 .container_div_noticias_lado_direito {
   margin-bottom: 40px;
+  margin-left: 10px;
+  width: 300px;
 }
 
 .inf-about-author {
