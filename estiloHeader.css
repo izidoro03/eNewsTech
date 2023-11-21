@@ -20,6 +20,7 @@ a {
 .list-header {
   display: flex;
   justify-content: space-around;
+  background-color: #d9d9d9;
 }
 
 .logo-header {
@@ -90,10 +91,6 @@ a {
   cursor: pointer;
 }
 
-.container-header {
-  height: 75px;
-}
-
 .btnSearch {
   padding: 10px 25px;
   background-color: #00893c;
@@ -104,4 +101,30 @@ a {
   letter-spacing: 2px;
   border: none;
   cursor: pointer;
+}
+
+.bemvindo {
+  display: none;
+  flex-direction: column;
+}
+
+.bemvindo h3 {
+  font-size: 1.2rem;
+}
+
+.bemvindo label {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.tonarJornalista {
+  display: none;
+}
+
+.destaque-verde {
+  color: #00893c;
+}
+
+.CorDestaqueVerde {
+  color: #00893c;
 }
